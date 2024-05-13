@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Doctors</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="sidebar">
+  <header>
+    <h1>ALL Doctor</h1>
+  </header>
+  <nav>
+    
+  </nav>
+</div>
+<main>
+  <div id="doctorList">
+    <!-- Doctor details will be displayed here -->
+  </div>
+</main>
+
+
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+               <img src="#" alt="">
+            </div>
+
+            <span class="logo_name">HPMS</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="index.html">
+                    <i class="bx bxs-dashboard"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="all_doctors.html">
+                    <i class='bx bxs-user'></i>
+                    <span class="link-name">All Doctors</span>
+                </a></li>
+                <li><a href="all_patient.html">
+                    <i class='bx bx-male-female'></i>
+                    <span class="link-name">All Patient</span>
+                </a></li>
+                <li><a href="all_appointment.html">
+                    <i class='bx bxs-bookmark-alt' ></i>
+                    <span class="link-name">All Appointments</span>
+                </a></li>
+                <li><a href="all_prescriptions.html">
+                    <i class='bx bxs-book-alt'></i>
+                    <span class="link-name">All Prescriptions</span>
+                </a></li>
+                
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                        <span class="link-name">Dark Mode</span>
+                    </a>
+
+                    <div class="mode-toggle">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+        </div>
+
+        <div class="container mt-3">
+            
+          <div class="row">
+            <div class="col">
+              <h3 class="text-center">Our All Patient List</h3> <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <div class="card">
+                <img class="card-img-top" height="200px" src="img/download (1).jpeg" alt="Card image cap">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Profile</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <img class="card-img-top" height="200px" src="img/download (2).jpeg" alt="Card image cap">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Profile</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <img class="card-img-top" height="200px" src="img/download (3).jpeg" alt="Card image cap">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Profile</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <img class="card-img-top" height="200px" src="img/download.jpeg" alt="Card image cap">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Profile</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </section>   
+    <script src="script.js"></script>
+    <script>
+      // Array of all doctors with name, specialization, and availability
+      const doctors = [
+        {
+          name: "Dr. Smith",
+          specialization: "Cardiologist",
+          availability: "Monday, Wednesday, Friday"
+        },
+        {
+          name: "Dr. Johnson",
+          specialization: "Dermatologist",
+          availability: "Tuesday, Thursday"
+        },
+        {
+          name: "Dr. Williams",
+          specialization: "Pediatrician",
+          availability: "Monday to Friday"
+        },
+        // Add more doctors as needed
+      ];
+    
+      // Function to display all doctors
+      function displayAllDoctors() {
+        const doctorList = document.getElementById("doctorList");
+        doctorList.innerHTML = ""; // Clear previous list
+    
+        doctors.forEach(doctor => {
+          const doctorDetails = document.createElement("div");
+          doctorDetails.innerHTML = `
+            <p><strong>Name:</strong> ${doctor.name}</p>
+            <p><strong>Specialization:</strong> ${doctor.specialization}</p>
+            <p><strong>Availability:</strong> ${doctor.availability}</p>
+            <hr>
+          `;
+          doctorList.appendChild(doctorDetails);
+        });
+      }
+    
+      // Event listener for "All Doctors" option
+      const allDoctorsLink = document.getElementById("allDoctors");
+      allDoctorsLink.addEventListener("click", displayAllDoctors);
+    </script>
+</body>
+</html>
