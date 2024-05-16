@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="style.css">
-     
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <title>Admin Dashboard Panel</title>
-    
+    <title>Prescription Dashboard</title>
+    <style>
+        /* Additional styling */
+        .prescription-card {
+            margin-bottom: 20px;
+        }
+
+        .prescription-card .card-body {
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <nav>
         <div class="logo-name">
             <div class="logo-image">
-               <img src="#" alt="">
+                <img src="#" alt="">
             </div>
-
             <span class="logo_name">HPMS</span>
         </div>
-
         <div class="menu-items">
             <ul class="nav-links">
                 <li><a href="index.html">
@@ -44,20 +49,17 @@
                     <i class='bx bxs-book-alt'></i>
                     <span class="link-name">All Prescriptions</span>
                 </a></li>
-               
             </ul>
             <ul class="logout-mode">
                 <li><a href="#">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>
-
                 <li class="mode">
                     <a href="#">
                         <i class="uil uil-moon"></i>
                         <span class="link-name">Dark Mode</span>
                     </a>
-
                     <div class="mode-toggle">
                         <span class="switch"></span>
                     </div>
@@ -65,72 +67,29 @@
             </ul>
         </div>
     </nav>
-
     <section class="dashboard">
         <div class="top">
             <i class="uil uil-bars sidebar-toggle"></i>
-
             <div class="search-box">
                 <i class="uil uil-search"></i>
                 <input type="text" placeholder="Search here...">
             </div>
         </div>
-
-        <div class="dash-content">
-            <div class="overview">
-                <div class="title">
-                    <i class="uil uil-tachometer-fast-alt"></i>
-                    <span class="text">Dashboard</span>
-                </div>
-
-                <div class="boxes">
-                    <a href="Add_appointment.html" class="box box1" style="padding: 20px;">  
-                        <i class='bx bxs-bookmark-alt-plus'></i> 
-                        <span class="text">Add Appointment</span>
-                    </a>
-                    <a href="add_doctor.html" class="box box2" style="padding: 20px;">  
-                        <i class='bx bxs-user-plus'></i> 
-                        <span class="text">Add Doctor</span>
-                    </a>
-                    <a href="add_prescription.html" class="box box3" style="padding: 20px;">  
-                        <i class='bx bxs-first-aid'></i> 
-                        <span class="text">Add Prescription</span>
-                    </a>
-                    
-                    <a href="Add_patient.html" class="box box4" style="padding: 20px;">  
-                        <i class='bx bxs-first-aid'></i> 
-                        <span class="text">Add Patient</span>
-                    </a>
-
-                </div>
-            </div>
-            
-            <div class="activity">
-                <div class="title">
-                    <i class="uil uil-clock-three"></i>
-                    <span class="text">Recent Activity</span>
-                </div>
-
-                <div class="activity-data">
-                    <div class="data names">
-                       
-                    </div>
-                    <div class="data email">
-                       
-                    </div>
-                    <div class="data joined">
-                       
-                    </div>
-                    <div class="data type">
-                       
-                    </div>
-                    <div class="data status">
-                       
+        <div class="container mt-5">
+            <h2 class="mb-4 text-center">Prescription Dashboard</h2>
+            <div class="prescription-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Patient: John Doe</h5>
+                        <p class="card-text">Date: 2024-05-15</p>
+                        <p class="card-text">Medication: Lorem Ipsum</p>
+                        <p class="card-text">Dosage: 10mg</p>
+                        <!-- Add more prescription details as needed -->
                     </div>
                 </div>
             </div>
+            <!-- Add more prescription cards here -->
         </div>
-    </section>   
-    <script src="script.js"></script>
+    </section>
 </body>
 </html>

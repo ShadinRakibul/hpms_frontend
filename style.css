@@ -200,7 +200,7 @@ body.dark .nav-links li a:hover .link-name{
     transition: var(--tran-03);
 }
 body.dark .switch:before{
-    left: 20px;
+    left: 10px;
 }
 
 .dashboard{
